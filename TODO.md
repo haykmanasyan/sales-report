@@ -4,10 +4,10 @@
 - [x] Create `_quarto.yml`
 - [x] Confirm `index.qmd` renders correctly
 - [x] Suppress warnings/messages in chunks
-- [ ] Verify relative paths to `/data`
+- [x] Verify relative paths to `/data`
 
 ## Data Preparation
-- [ ] Read CSV into R
+- [x] Read CSV into R
 - [ ] Create `total_touches` variable
 - [ ] Create `total_gross` variable
 
