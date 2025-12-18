@@ -2,8 +2,8 @@
 
 ## Project Setup
 - [x] Create `_quarto.yml`
-- [ ] Confirm `index.qmd` renders correctly
-- [ ] Suppress warnings/messages in chunks
+- [x] Confirm `index.qmd` renders correctly
+- [x] Suppress warnings/messages in chunks
 - [ ] Verify relative paths to `/data`
 
 ## Data Preparation
