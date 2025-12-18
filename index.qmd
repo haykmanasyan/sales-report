@@ -43,8 +43,39 @@ library(tidyverse)
 
 sales <- read.csv("data/sales_data.csv")
 
-head(sales)
+start_date <- as.Date("2025-06-23")
+
+sales_cadence <- sales %>%
+  mutate(
+    Date = as.Date(Date, format = "%m/%d/%Y"),
+    prev_date = lag(Date, default = start_date),
+    days_between = as.numeric(Date - prev_date)
+  )
+
+ggplot(sales_cadence, aes(x = days_between)) +
+  geom_histogram(
+    binwidth = 2,
+    boundary = 0,
+    fill = "steelblue",
+    color = "white"
+  ) +
+  scale_x_continuous(
+    breaks = seq(0, max(sales_cadence$days_between, na.rm = TRUE), by = 2)
+  ) +
+  scale_y_continuous(
+    breaks = seq(0, 14, by = 2),
+    expand = expansion(mult = c(0, 0.05))
+  ) +
+  labs(
+    title = "Days Between Consecutive Sales",
+    subtitle = "Distribution of gaps between closed deals",
+    x = "Days Between Sales",
+    y = "Number of Deals"
+  ) +
+  theme_minimal()
+
 ```
+
 ---
 
 # Product Mix & Specialization
