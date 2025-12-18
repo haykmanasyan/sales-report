@@ -38,6 +38,13 @@ execute:
 
 # Sales Cadence & Consistency
 
+``` {r}
+library(tidyverse)
+
+sales <- read.csv("data/sales_data.csv")
+
+head(sales)
+```
 ---
 
 # Product Mix & Specialization
