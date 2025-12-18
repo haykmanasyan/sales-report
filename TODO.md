@@ -8,16 +8,14 @@
 
 ## Data Preparation
 - [x] Read CSV into R
-- [ ] Create `total_touches` variable
-- [ ] Create `total_gross` variable
 
 ## Sales Cadence & Consistency
-- [ ] Compute days between consecutive sales
+- [x] Compute days between consecutive sales
 - [ ] Calculate average days between sales
 - [ ] Identify longest gap
 - [ ] Identify shortest gap
 - [ ] Aggregate deals per month
-- [ ] Plot histogram of days between sales
+- [x] Plot histogram of days between sales
 - [ ] Plot bar chart of deals per month
 - [ ] Write interpretation paragraph
 
