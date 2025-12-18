@@ -1,0 +1,68 @@
+---
+title: "Measuring My Time in Automotive Sales"
+subtitle: "A short public data report"
+author: "Hayk Manasyan"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: true
+    code-summary: "Show code"
+execute:
+  warning: false
+  message: false
+---
+
+# Executive Summary
+
+---
+
+# Context & Data
+
+## Dataset Overview
+
+
+## Key Fields
+
+- Date
+- New vs Used
+- Make & Model
+- Lead Source
+- Follow-up activity (calls, texts, emails, videos)
+- Trade-in indicator
+- Front-end vs Back-end gross
+
+## Data Notes
+
+---
+
+# Sales Cadence & Consistency
+
+---
+
+# Product Mix & Specialization
+
+---
+
+# Effort Required to Close
+
+---
+
+# Lead Source Quality
+
+---
+
+# Deal Economics
+
+---
+
+# Key Takeaways
+
+---
+
+# Limitations & Notes
+
+---
+
+# Closing
+
