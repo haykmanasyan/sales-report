@@ -1,0 +1,29 @@
+Date,New/Used,Make,Model,Source,Calls,Texts,Emails,Videos,Trade-in?,Front-end Gross,Back-end Gross
+07/03/2025,New,Jeep,Grand Cherokee,Walk-in,1,0,0,0,No,-4289,1700
+07/14/2025,Used,Jeep,Gladiator,Walk-in,1,0,0,0,Yes,-2520,2120
+07/17/2025,Used,Jeep,Grand Cherokee,Autotrader,2,21,0,0,No,-2669,7120
+07/18/2025,Used,Jeep,Cherokee,Walk-in,4,13,0,1,No,-741,0
+07/23/2025,Used,Jeep,Wagoneer,Autotrader,2,26,1,1,Yes,-4,4825
+07/24/2025,Used,Hyundai,Sonata,CARFAX,1,3,0,0,No,-285,0
+08/02/2025,Used,Dodge,Charger,CarGurus,1,0,17,2,No,-4783,3282
+08/07/2025,Used,Tesla,Model 3,RunMyLease,4,57,4,1,No,-383,2624
+08/07/2025,Used,Dodge,Charger,CarGurus,1,11,0,0,No,-2622,1434
+08/10/2025,Used,RAM,2500,CarGurus,1,1,7,0,No,4838,6028
+08/24/2025,New,Jeep,Grand Cherokee,Walk-in,1,6,0,0,Yes,-4510,4911
+08/24/2025,New,Jeep,Wrangler,Walk-in,0,0,0,0,Yes,-2046,935
+09/01/2025,New,RAM,1500,Dealer website,2,4,0,0,Yes,-2820,6596
+09/06/2025,Used,Jeep,Wrangler 4xe,CarNow,5,4,1,1,Yes,-1693,2558
+09/06/2025,Used,RAM,1500,CarGurus,1,12,2,0,Yes,5091,7467
+09/07/2025,Used,BMW,i3,Autotrader,6,1,0,0,No,1900,0
+09/17/2025,Used,Subaru,Forester,Walk-in,4,26,0,0,Yes,798,0
+09/27/2025,Used,Jeep,Grand Cherokee,Dealer website,2,10,0,0,No,2374,3000
+10/02/2025,New,RAM,1500,Walk-in,2,4,0,0,Yes,-1115,0
+10/10/2025,Used,Dodge,Charger,Walk-in,1,3,0,0,Yes,167,4623
+10/12/2025,Used,RAM,2500,Dealer website,0,7,0,1,Yes,-3594,263
+10/14/2025,Used,Toyota,Corolla,Dealer website,1,6,6,1,No,2646,1377
+10/17/2025,New,RAM,2500,KBB,8,41,2,1,No,-3478,2959
+10/25/2025,Used,Jeep,Grand Cherokee,Walk-in,1,20,2,0,Yes,2614,0
+10/28/2025,Used,Jeep,Grand Cherokee,Walk-in,1,19,0,0,Yes,-3580,900
+11/02/2025,New,Jeep,Grand Cherokee,RunMyLease,2,6,0,1,No,-2980,6240
+11/03/2025,New,RAM,1500,Walk-in,0,0,0,0,Yes,6517,3709
+11/05/2025,New,Jeep,Wrangler,Cars.com,4,10,7,1,No,-2200,0
