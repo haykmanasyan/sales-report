@@ -14,7 +14,7 @@
 - [x] Calculate average days between sales
 - [x] Identify longest gap
 - [x] Identify shortest gap
-- [ ] Aggregate deals per month
+- [x] Aggregate deals per month
 - [x] Plot histogram of days between sales
 - [ ] Plot bar chart of deals per month
 - [ ] Write interpretation paragraph
