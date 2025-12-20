@@ -11,9 +11,9 @@
 
 ## Sales Cadence & Consistency
 - [x] Compute days between consecutive sales
-- [ ] Calculate average days between sales
-- [ ] Identify longest gap
-- [ ] Identify shortest gap
+- [x] Calculate average days between sales
+- [x] Identify longest gap
+- [x] Identify shortest gap
 - [ ] Aggregate deals per month
 - [x] Plot histogram of days between sales
 - [ ] Plot bar chart of deals per month

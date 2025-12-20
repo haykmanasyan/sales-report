@@ -76,6 +76,22 @@ ggplot(sales_cadence, aes(x = days_between)) +
 
 ```
 
+
+``` {r}
+mean(sales_cadence$days_between)
+```
+
+``` {r}
+min(sales_cadence$days_between)
+```
+
+``` {r}
+max(sales_cadence$days_between)
+
+sales_cadence %>%
+  filter(days_between == max(days_between)) %>%
+  select(Date, prev_date, days_between)
+```
 ---
 
 # Product Mix & Specialization
