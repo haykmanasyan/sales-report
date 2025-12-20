@@ -83,6 +83,11 @@ mean(sales_cadence$days_between)
 
 ``` {r}
 min(sales_cadence$days_between)
+
+sales_cadence %>%
+  summarise(
+    same_day_sales = sum(days_between == 0, na.rm = TRUE)
+  )
 ```
 
 ``` {r}
