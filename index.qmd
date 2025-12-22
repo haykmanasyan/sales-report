@@ -160,19 +160,6 @@ cdjr_vs_non <- sales %>%
 cdjr_vs_non
 ```
 
-``` {r}
-model_counts <- sales %>%
-  count(Model, sort = TRUE) %>%
-  mutate(
-    percent = scales::percent(n / sum(n))
-  ) %>%
-  rename(
-    model = Model,
-    deals = n
-  )
-
-model_counts
-```
 
 ``` {r}
 new_vs_used <- sales %>%
@@ -186,6 +173,41 @@ new_vs_used <- sales %>%
 new_vs_used
 ```
 
+``` {r}
+model_counts <- sales %>%
+  count(Model, sort = TRUE) %>%
+  mutate(
+    percent = scales::percent(n / sum(n))
+  ) %>%
+  rename(
+    model = Model,
+    deals = n
+  )
+
+model_counts_grouped <- model_counts %>%
+  mutate(
+    model_grouped = if_else(deals == 1, "Other", model)
+  ) %>%
+  group_by(model_grouped) %>%
+  summarise(deals = sum(deals), .groups = "drop") %>%
+  arrange(desc(deals))
+
+ggplot(model_counts_grouped,
+       aes(x = reorder(model_grouped, deals), y = deals)) +
+  geom_col(fill = "steelblue") +
+  coord_flip() +
+  scale_y_continuous(
+    breaks = seq(0, max(model_counts_grouped$deals), by = 1),
+    expand = expansion(mult = c(0, 0.05))
+  ) +
+  labs(
+    title = "Vehicle Models Sold",
+    subtitle = "Grouped to highlight most frequently sold models",
+    x = NULL,
+    y = "Number of Deals"
+  ) +
+  theme_minimal()
+```
 ---
 
 # Effort Required to Close

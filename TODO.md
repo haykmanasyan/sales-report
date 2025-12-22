@@ -23,8 +23,8 @@
 - [x] Count deals by model
 - [x] Calculate % of deals that are Grand Cherokee
 - [x] Count deals by make
-- [ ] Lump low-frequency models into “Other”
-- [ ] Plot deals by model
+- [x] Lump low-frequency models into “Other”
+- [x] Plot deals by model
 - [ ] Write specialization interpretation
 
 ## Effort Required to Close
