@@ -123,6 +123,56 @@ sales %>%
 ---
 
 # Product Mix & Specialization
+``` {r}
+make_counts <- sales %>%
+  count(Make, sort = TRUE) %>%
+  mutate(
+    percent = scales::percent(n / sum(n))
+  ) %>%
+  rename(
+    model = Make,
+    deals = n
+  )
+
+make_counts
+```
+
+```{r}
+cdjr_makes <- c("Chrysler", "Dodge", "Jeep", "RAM")
+
+cdjr_vs_non <- sales %>%
+  mutate(
+    dealer_brand = if_else(
+      Make %in% cdjr_makes,
+      "CDJR",
+      "Non-CDJR"
+    )
+  ) %>%
+  count(dealer_brand) %>%
+  mutate(
+    percent = scales::percent(n / sum(n))
+  ) %>%
+  rename(
+    category = dealer_brand,
+    deals = n
+  )
+
+cdjr_vs_non
+```
+
+``` {r}
+model_counts <- sales %>%
+  count(Model, sort = TRUE) %>%
+  mutate(
+    percent = scales::percent(n / sum(n))
+  ) %>%
+  rename(
+    model = Model,
+    deals = n
+  )
+
+model_counts
+```
 
 ---
 

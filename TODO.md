@@ -16,13 +16,13 @@
 - [x] Identify shortest gap
 - [x] Aggregate deals per month
 - [x] Plot histogram of days between sales
-- [ ] Plot bar chart of deals per month
+- [x] Plot bar chart of deals per month
 - [ ] Write interpretation paragraph
 
 ## Product Mix & Specialization
-- [ ] Count deals by model
-- [ ] Calculate % of deals that are Grand Cherokee
-- [ ] Count deals by make
+- [x] Count deals by model
+- [x] Calculate % of deals that are Grand Cherokee
+- [x] Count deals by make
 - [ ] Lump low-frequency models into “Other”
 - [ ] Plot deals by model
 - [ ] Write specialization interpretation
