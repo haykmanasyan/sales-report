@@ -212,6 +212,46 @@ ggplot(model_counts_grouped,
 
 # Effort Required to Close
 
+```{r}
+sales_effort <- sales %>%
+  mutate(
+    total_touches = Calls + Texts + Emails + Videos
+  )
+
+sales_effort %>%
+  summarise(
+    mean_touches = mean(total_touches, na.rm = TRUE),
+    median_touches = median(total_touches, na.rm = TRUE)
+  )
+
+sales_effort <- sales %>%
+  mutate(
+    total_touches = Calls + Texts + Emails + Videos,
+    effort_bucket = case_when(
+      total_touches <= 2  ~ "0–2",
+      total_touches <= 6  ~ "3–6",
+      total_touches <= 12 ~ "7–12",
+      total_touches <= 20 ~ "13–20",
+      TRUE                ~ "21+"
+    ),
+    effort_bucket = factor(
+      effort_bucket,
+      levels = c("0–2", "3–6", "7–12", "13–20", "21+"),
+      ordered = TRUE
+    )
+  )
+
+ggplot(sales_effort, aes(x = effort_bucket)) +
+  geom_bar(fill = "steelblue") +
+  labs(
+    title = "Effort Required to Close a Sale",
+    subtitle = "Deals grouped by total follow-up intensity",
+    x = "Total Touches (bucketed)",
+    y = "Number of Deals"
+  ) +
+  theme_minimal()
+```
+
 ---
 
 # Lead Source Quality
