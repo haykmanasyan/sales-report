@@ -33,9 +33,9 @@
 - [ ] Write process-focused interpretation
 
 ## Lead Source Quality
-- [ ] Count deals by source
-- [ ] Calculate average touches by source
-- [ ] Plot deals by source
+- [x] Count deals by source
+- [x] Calculate average touches by source
+- ~~[ ] Plot deals by source~~
 - [ ] Write channel-level interpretation
 
 ## Deal Economics
