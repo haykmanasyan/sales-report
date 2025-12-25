@@ -223,7 +223,9 @@ sales_effort %>%
     mean_touches = mean(total_touches, na.rm = TRUE),
     median_touches = median(total_touches, na.rm = TRUE)
   )
+```
 
+```{r}
 sales_effort <- sales %>%
   mutate(
     total_touches = Calls + Texts + Emails + Videos,
