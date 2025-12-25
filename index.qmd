@@ -258,6 +258,42 @@ ggplot(sales_effort, aes(x = effort_bucket)) +
 
 # Lead Source Quality
 
+```{r}
+lead_counts <- sales %>%
+  count(Source, sort = TRUE) %>%
+  mutate(
+    percent = scales::percent(n / sum(n))
+  ) %>%
+  rename(
+    lead_source = Source,
+    deals = n
+  )
+
+lead_counts
+```
+
+```{r}
+mean_activity_tiered <- sales_effort %>%
+  mutate(
+    source_tier = case_when(
+      Source == "Walk-in" ~ "Walk-in",
+      Source == "Dealer website" ~ "Dealer website",
+      Source %in% c("Autotrader", "CarGurus", "Cars.com", "KBB", "CARFAX", "RunMyLease", "CarNow") ~
+        "Third-party marketplace"
+    )
+  ) %>%
+  group_by(source_tier) %>%
+  summarise(
+    deals = n(),
+    mean_touches = mean(total_touches, na.rm = TRUE),
+    median_touches = median(total_touches, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(mean_touches))
+
+mean_activity_tiered
+```
+
 ---
 
 # Deal Economics
