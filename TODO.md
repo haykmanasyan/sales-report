@@ -28,8 +28,8 @@
 - [ ] Write specialization interpretation
 
 ## Effort Required to Close
-- [ ] Summarize total touches (mean, median)
-- [ ] Plot distribution of total touches
+- [x] Summarize total touches (mean, median)
+- [x] Plot distribution of total touches
 - [ ] Write process-focused interpretation
 
 ## Lead Source Quality
